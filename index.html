@@ -29,6 +29,7 @@
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
+
     </header>
     <!-- header end -->
 
@@ -140,7 +141,7 @@
         <h1 class="prices">GALLERY</h1>
         <div class="wrapper">
             <div class="grid-wrapper">
-                <div><img src="img/logan-weaver-lgnwvr-DwiHf5nS_fQ-unsplash.jpg" alt="Gallery Image 1">
+                <div><img src="img/hair.jpg" alt="Gallery Image 1">
                 </div>
                 <div class="wide"><img src="img/hai-phung-m4Pd_e-4zKs-unsplash.jpg" alt="Gallery Image 1">
                 </div>
@@ -148,12 +149,11 @@
                 </div>
                 <div class="tall"> <img src="img/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg" alt="Gallery Image 3">
                 </div>
-                <div class="wide"> <img src="img/jason.jpg" alt="Gallery Image 3">
+                <div> <img src="img/jason.jpg" alt="Gallery Image 3">
                 </div>
-                <div class="tall"> <img src="img/andrea-donato-vuON347SuzE-unsplash.jpg" alt="Gallery Image 3"></div>
-                <div class="tall"> <img src=" img/hair.jpg" alt=""> </div>
-                <div> <img src=" img/apothecary-87-WN1P9aSLfa4-unsplash.jpg" alt=""> </div>
-                <div> <img src=" img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt=""> </div>
+                <div> <img src="img/allef-vinicius-IvQeAVeJULw-unsplash.jpg" alt="Gallery Image 3">
+                </div>
+
             </div>
         </div>
     </section>
@@ -258,37 +258,7 @@
 
 
     // carousel start
-    // window.addEventListener("load", () => {
-    //     autoSlide();
-    // });
 
-    // function autoSlide() {
-    //     setInterval(() => {
-    //         slide(getItemActiveIndex() + 1);
-    //     }, 7000); // slide speed = 3s
-    // }
-
-    // function slide(toIndex) {
-    //     const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-    //     const itemActive = document.querySelector(".carousel_item__active");
-
-    //     itemsArray.forEach(item => {
-    //         item.classList.remove("carousel_item__active");
-    //     });
-
-    //     // Ensure toIndex stays within valid range
-    //     const newItemIndex = (toIndex + itemsArray.length) % itemsArray.length;
-    //     const newItem = itemsArray[newItemIndex];
-    //     newItem.classList.add("carousel_item__active");
-    // }
-
-    // function getItemActiveIndex() {
-    //     const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-    //     const itemActive = document.querySelector(".carousel_item__active");
-    //     const itemActiveIndex = itemsArray.indexOf(itemActive);
-    //     return itemActiveIndex;
-    // }
-    // carousel end
 
     window.addEventListener("load", () => {
         autoSlide();
@@ -297,7 +267,7 @@
     function autoSlide() {
         setInterval(() => {
             slide(getItemActiveIndex() + 1);
-        }, 10000); // slide speed = 3s
+        }, 4000); // slide speed = 3s
     }
 
     function slide(toIndex) {
@@ -316,7 +286,7 @@
         setTimeout(() => {
             newItemActive.classList.add("carousel_item__next");
             itemActive.classList.add("carousel_item__next");
-        }, 5000);
+        }, 300);
 
         // remove all transition class and switch active class
         newItemActive.addEventListener("transitionend", () => {
@@ -333,4 +303,6 @@
         const itemActiveIndex = itemsArray.indexOf(itemActive);
         return itemActiveIndex;
     }
+
+    // carosel end
 </script>
