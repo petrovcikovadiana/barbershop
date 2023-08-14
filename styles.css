@@ -10,47 +10,52 @@ body {
   background-color: #191919;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f8cc8c;
+}
+
+.navi-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.navi-list li:not(.centered-logo) {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+.logo {
+  padding: 15px 0;
+}
+
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
 header {
   font-family: "Raleway", sans-serif;
   width: 100%;
   z-index: 4;
   background-color: rgb(25, 25, 25, 0.8);
-  position: sticky; /* Add sticky positioning */
+  position: sticky;
   top: 0;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  padding: 20px 80px;
-  width: 100%; /* Ensure header content takes full width */
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 15px;
-  z-index: 3;
-}
-
-.logo img {
-  max-width: 50px; /* Set the max width of your logo */
-  height: 50px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 0 15px;
 }
 
 nav ul li a {
@@ -73,15 +78,14 @@ nav ul li a:hover {
 .hover-underline-animation:after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 50%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
-  left: 0;
   background-color: #f8cc8c;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-  bottom: -5px; /* Adjust the value to move the underline lower */
+  bottom: -9px;
 }
 
 .hover-underline-animation:hover:after {
@@ -124,14 +128,9 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-.hero-text {
-  width: 650px;
-  margin: 80px 0;
-}
-
 .pricing-section {
   background-color: #191919;
-  padding: 60px 20px;
+  padding: 100px 20px 0 20px;
 }
 
 #triangle-bottomleft {
@@ -147,9 +146,8 @@ p {
   flex-direction: row;
   margin: 0 200px;
   gap: 50px;
-  justify-content: center; /* Horizontally center the content */
+  justify-content: center;
   align-items: center;
-  /* box-shadow: 0px 0px 19px 5px rgba(248, 204, 140, 0.19); */
 }
 
 .pricing-card-left {
@@ -172,6 +170,10 @@ p {
   height: 450px;
   width: 550px;
   padding: 25px 35px;
+}
+
+#contact {
+  padding-top: 30px;
 }
 
 .contact-container {
@@ -260,10 +262,10 @@ p {
 #gallery {
   background-color: #191919;
   margin: 0 auto;
-  padding: 60px 0; /* Keep top and bottom padding, remove left and right */
+  padding-top: 100px;
   margin: 0 auto;
-  width: 100%; /* Make sure the element takes the full width available */
-  max-width: 1000px; /* Adjust the maximum width as needed */
+  width: 100%;
+  max-width: 1000px;
 }
 
 h2 {
@@ -313,7 +315,6 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 100px;
   background-color: #191919;
 }
 
@@ -477,12 +478,13 @@ img {
 
 #landing_page {
   max-width: 1500px;
-  margin: 0 auto; /* Center the element horizontally */
+  margin: 0 auto;
 }
 
 .carousel_inner {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .carousel_inner::after {
@@ -497,10 +499,9 @@ img {
   display: none;
   width: 100%;
   margin-right: -100%;
-  background-color: black; /* Apply the background color to each slide */
+  background-color: black;
 }
 
-/* slide effect */
 .carousel_item__active,
 .carousel_item__pos_next {
   display: block;
@@ -515,23 +516,6 @@ img {
   transition: transform 0.5s ease-in-out;
 }
 
-/* fade effect */
-.carousel__fade .carousel_item__pos_next {
-  left: 0;
-  opacity: 0;
-}
-
-.carousel__fade .carousel_item__next {
-  transform: none;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.carousel__fade .carousel_item__active.carousel_item__next {
-  opacity: 0;
-}
-
-/* carousel */
 .carousel_img {
   display: block;
   width: 100%;
@@ -552,7 +536,7 @@ img {
   color: #fff;
 
   width: 100%;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 .carousel_title {
