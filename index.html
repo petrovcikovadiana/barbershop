@@ -10,42 +10,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
     <!-- header start -->
 
     <header>
-        <nav class="navi">
-            <ul class="navi-list">
-                <li><a href="#landing_page">O nás</a></li>
-                <li><a href="#pricing">Ceník</a></li>
-                <li class="centered-logo">
-                    <a href="/">
-                        <div class="logo"><img src="img/logo.webp" alt=""></div>
-                    </a>
-                </li>
-                <li><a href="#gallery">Galerie</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-
+        <div class="navbar">
+            <nav>
+                <ul class="nav_list">
+                    <li><a href="#hero">O nás</a></li>
+                    <li><a href="#pricing">Ceník</a></li>
+                    <li class="centered_logo">
+                        <a href="/">
+                            <div class="logo"><img src="img/logo.webp" alt=""></div>
+                        </a>
+                    </li>
+                    <li><a href="#gallery">Galerie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- header end -->
 
     <!-- hero start -->
-    <section id="landing_page">
+    <section id="hero">
         <div class="carousel">
             <div class="carousel_inner">
                 <div class="carousel_item carousel_item__active">
                     <img src="img/barber1 (1).png" alt="" class="carousel_img">
                 </div>
                 <div class="carousel_caption">
-                    <h1>ODBORNÍCI S BŘITVOU V RUCE</h1>
-                    <p>BARBERSHOP PEPE
-                    </p>
-                    <hr class="hr">
-                    <p class="history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci, kteří si
+                    <p class="carousel_subtitle">ODBORNÍCI S BŘITVOU V RUCE</p>
+                    <h1 class="carousel_title">BARBERSHOP PEPE
+                    </h1>
+                    <hr class="carousel_hr">
+                    <p class="carousel_history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci,
+                        kteří si
                         chtějí užit
                         dokonalou péčí
                         o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
@@ -59,11 +63,12 @@
                     <img src="img/barber2ss.png" alt="" class="carousel_img">
                 </div>
                 <div class="carousel_caption">
-                    <h1>ODBORNÍCI S BŘITVOU V RUCE</h1>
-                    <p>BARBERSHOP PEPE
-                    </p>
-                    <hr class="hr">
-                    <p class="history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci, kteří si
+                    <p class="carousel_subtitle">ODBORNÍCI S BŘITVOU V RUCE</p>
+                    <h1 class="carousel_title">BARBERSHOP PEPE
+                    </h1>
+                    <hr class="carousel_hr">
+                    <p class="carousel_history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci,
+                        kteří si
                         chtějí užit
                         dokonalou péčí
                         o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
@@ -77,11 +82,12 @@
                     <img src="img/barbers.png" alt="" class="carousel_img">
                 </div>
                 <div class="carousel_caption">
-                    <h1>ODBORNÍCI S BŘITVOU V RUCE</h1>
-                    <p>BARBERSHOP PEPE
-                    </p>
-                    <hr class="hr">
-                    <p class="history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci, kteří si
+                    <p class="carousel_subtitle">ODBORNÍCI S BŘITVOU V RUCE</p>
+                    <h1 class="carousel_title">BARBERSHOP PEPE
+                    </h1>
+                    <hr class="carousel_hr">
+                    <p class="carousel_history">Panský salon je místem, kde se setkávají opravdové chlapi a chlapci,
+                        kteří si
                         chtějí užit
                         dokonalou péčí
                         o svůj zevnějšek. U nás si odpočinete, pokecáte, proberete nejrůznější témata nebo si v
@@ -98,38 +104,37 @@
 
     <!-- pricing start -->
     <section id="pricing">
-        <div class="pricing-section">
-            <div class="pricing-container">
-                <div class="pricing-card-left">
-                    <div id="triangle-bottomleft"></div>
+        <div class="pricing_section">
+            <div class="pricing_container">
+                <div class="pricing_card_left">
+                    <div id="triangle_bottomleft"></div>
                     <img src="img/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg" alt="">
                 </div>
-                <div class="pricing-card-right">
-                    <h2></h2>
-                    <h1 class="prices">CENÍK</h1>
-                    <div class="services-prices">
+                <div class="pricing_card_right">
+                    <h1 class="title_prices">CENÍK</h1>
+                    <div class="services_prices">
                         <p class="services">Střih </p>
                         <p class="price">550 kč</p>
                     </div>
-                    <hr class="hr-price">
-                    <div class="services-prices">
+                    <hr class="hr_price">
+                    <div class="services_prices">
                         <p class="services">Střih strojkem
                         </p>
                         <p class="price">650 kč</p>
                     </div>
-                    <hr class="hr-price">
-                    <div class="services-prices">
+                    <hr class="hr_price">
+                    <div class="services_prices">
                         <p class="services">Barvení vousů
                         </p>
                         <p class="price">650 kč</p>
                     </div>
-                    <hr class="hr-price">
-                    <div class="services-prices">
+                    <hr class="hr_price">
+                    <div class="services_prices">
                         <p class="services">Vousy „Hot Towel“
                         </p>
                         <p class="price">750 kč</p>
                     </div>
-                    <hr class="hr-price">
+                    <hr class="hr_price">
                 </div>
             </div>
         </div>
@@ -138,7 +143,7 @@
 
     <!-- gallery start -->
     <section id="gallery">
-        <h1 class="prices">GALLERY</h1>
+        <h1 class="title_prices">GALLERY</h1>
         <div class="wrapper">
             <div class="grid-wrapper">
                 <div><img src="img/hair.jpg" alt="Gallery Image 1">
@@ -162,11 +167,11 @@
     <!-- contact form start -->
     <section id="contact">
         <div class="contact_form">
-            <div class="container">
-                <div class="contact-box">
-                    <div class="left"></div>
-                    <div class="right">
-                        <h2>KONTAKTUJ NÁS</h2>
+            <div class="form_container">
+                <div class="contact_box">
+                    <div class="contact_box_left"></div>
+                    <div class="contact_box_right">
+                        <h2 class="contact_title">KONTAKTUJ NÁS</h2>
                         <form action="mailto:diana.petrovcikova@gmail.com" method="post" enctype="text/plain">
                             <input type="text" name="Jmeno" class="field" placeholder="Jméno">
                             <input type="text" name="Telefon" class="field" placeholder="Telefon">
@@ -181,9 +186,9 @@
     <!-- contact form end -->
 
     <!-- contact container start -->
-    <section class="hero1">
-        <div class="contact-container">
-            <div class="contact-card-left">
+    <section class="location_contact">
+        <div class="contact_container">
+            <div class="contact_card_left">
                 <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2528.9450723009495!2d14.029218376399946!3d50.665280371634005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470984b31faa30d9%3A0x5e73f29ce1627c03!2zTG9uZMO9bnNrw6EgMTg3NS8xLCA0MDAgMDEgw5pzdMOtIG5hZCBMYWJlbS1txJtzdG8sIMSMZXNrbw!5e0!3m2!1scs!2som!4v1691681388066!5m2!1scs!2som"
@@ -191,118 +196,63 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="contact-card-right">
-                <div>
-                    <img class="icons" src="img/contact-pin-location-svgrepo-com.svg" alt="">
+            <div class="contact_card_right">
 
-                    <h1 class="contact-info-header">Barber Shop Pepe</h1>
-                    <h1 class="contact-info">Londýnska 1875/1, </h1>
-                    <h1 class="contact-info">Ústí nad Labem 400 01</h1>
 
+                <div class="contact_info_container">
+
+                    <div class="icons_box">
+                        <img class="icons" src="img/contact-pin-location-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="contact_info_box">
+                        <h1 class="contact_info_header">Barber Shop Pepe</h1>
+                        <p class="contact_info">Londýnska 1875/1, </p>
+                        <p class="contact_info">Ústí nad Labem 400 01</p>
+                    </div>
+
+
+
+                    <div class="icons_box">
+                        <img class="icons" src="img/contact-phone-talking-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="contact_info_box">
+                        <h1 class="contact_info_header">+420 607 942 500
+                        </h1>
+                    </div>
+
+
+                    <div class="icons_box">
+                        <img class="icons" src="img/contact-email-mail-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="contact_info_box">
+                        <h1 class="contact_info_header">sirbazar@seznam.cz </h1>
+
+                    </div>
+
+                    <div class="icons_box">
+                        <img class="icons" src="img/contact-writing-write-svgrepo-com.svg" alt="">
+                    </div>
+                    <div class="contact_info_box">
+
+                        <h1 class="contact_info_header">Otevírací doba
+
+                        </h1>
+                        <p class="contact_info">Po - So: 09:00 - 21:00
+
+                        </p>
+                        <p class="contact_info">Ne: Zavřeno</p>
+                    </div>
                 </div>
-
-                <div>
-                    <img class="icons" src="img/contact-phone-talking-svgrepo-com.svg" alt="">
-
-                    <h1 class="contact-info-header">+420 607 942 500
-                    </h1>
-                </div>
-                <div>
-                    <img class="icons" src="img/contact-email-mail-svgrepo-com.svg" alt="">
-                    <h1 class="contact-info-header">sirbazar@seznam.cz </h1>
-                </div>
-
-                <div>
-                    <img class="icons" src="img/contact-writing-write-svgrepo-com.svg" alt="">
-
-                    <h1 class="contact-info-header">Otevírací doba
-                    </h1>
-                    <h1 class="contact-info">Po - So: 09:00 - 21:00
-
-                    </h1>
-                    <h1 class="contact-info">Ne: Zavřeno</h1>
-                </div>
-
             </div>
-
-
+        </div>
     </section>
-
     <!-- contact container end -->
 
     <!-- footer start -->
-
     <footer>
         <p class="copyright">&copy; 2023 Webgroo. All rights reserved.</p>
     </footer>
     <!-- footer end -->
-
-
 </body>
 
 </html>
-
-
-<script>
-
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-
-    // carousel start
-
-
-    window.addEventListener("load", () => {
-        autoSlide();
-    })
-
-    function autoSlide() {
-        setInterval(() => {
-            slide(getItemActiveIndex() + 1);
-        }, 4000); // slide speed = 3s
-    }
-
-    function slide(toIndex) {
-        const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-        const itemActive = document.querySelector(".carousel_item__active");
-
-        // check if toIndex exceeds the number of carousel items
-        if (toIndex >= itemsArray.length) {
-            toIndex = 0;
-        }
-
-        const newItemActive = itemsArray[toIndex];
-
-        // start transition
-        newItemActive.classList.add("carousel_item__pos_next");
-        setTimeout(() => {
-            newItemActive.classList.add("carousel_item__next");
-            itemActive.classList.add("carousel_item__next");
-        }, 300);
-
-        // remove all transition class and switch active class
-        newItemActive.addEventListener("transitionend", () => {
-            itemActive.className = "carousel_item";
-            newItemActive.className = "carousel_item carousel_item__active";
-        }, {
-            once: true
-        });
-    }
-
-    function getItemActiveIndex() {
-        const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
-        const itemActive = document.querySelector(".carousel_item__active");
-        const itemActiveIndex = itemsArray.indexOf(itemActive);
-        return itemActiveIndex;
-    }
-
-    // carosel end
-</script>
